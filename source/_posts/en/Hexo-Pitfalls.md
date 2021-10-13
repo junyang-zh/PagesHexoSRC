@@ -20,6 +20,8 @@ Here are the useful blogs and resources that I learned from to build this site.
 [Math Equations](https://github.com/theme-next/hexo-theme-next/blob/master/docs/MATH.md), 
 [Hexo渲染LaTeX公式](https://www.jianshu.com/p/9b9c241146bc)
 
+For $\LaTeX$, I prefer to use Ktex for faster experience. However it doesn't break lines. Thus I am compelled to use mathjax based solutions, which are slow for voluminous equations.
+
 
 - Excerpt settings:
 [hexo-excerpt](https://github.com/chekun/hexo-excerpt)
