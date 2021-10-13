@@ -9,8 +9,11 @@ description: ''
 keywords:
 author: Junyang Zhang
 language:
-  - en
   - zh-CN
+  - en
+i18n:
+  type: [page, post]
+  generator: [archive, about]
 timezone: ''
 
 # URL
@@ -31,6 +34,7 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+  - "README.md"
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -66,6 +70,7 @@ index_generator:
   path: ''
   per_page: 10
   order_by: -date
+  single_language_index: false
 
 # Category & Tag
 default_category: uncategorized
