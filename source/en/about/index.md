@@ -36,7 +36,7 @@ Honors Computer Science, B.S., 2019-2023.
 
 <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
 <div>
-    <b>University of Pennsylvania</b>,
+<b>University of Pennsylvania</b>,
 <br>
 International Guest Student, 2022-2022.
 </div>
