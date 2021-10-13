@@ -6,7 +6,7 @@ tags: Tech
 
 Here are the useful blogs and resources that I learned from to build this site.
 
-- internationalization:
+- Internationalization:
 [hexo-generator-i18n](https://github.com/Jamling/hexo-generator-i18n), 
 [Hexo站点建设之——国际化(i18n)](https://blog.csdn.net/calvin_zhou/article/details/110957632)
 
