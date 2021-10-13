@@ -24,6 +24,7 @@ tags: 随想
 - [新东方在线](https://library.koolearn.com)，交大 IP 的话可以白嫖数年前的线上课程；
 - 各种模考网站：[11gre](https://11gre.com/paper/view?type=0)，[微臣](http://gwc.weichenedu.cn/products/)，[皇冠gre](https://www.gre.vip/home)，但我一分钱也没交，题够刷了；
 - [词根词缀词典](http://www.dicts.cn/)，以及它的安卓、IOS App，它们的开发者看起来有血有肉的，很有意思；
+- *The Economics* 表达水平这真的高，可惜政治立场有点对立；
 - 3000 核心词的 Excel 表，我放在博客里吧，感觉有用：[GRE3000Essential.xls](/files/GRE3000Essential.xls)。
 
 要努力背单词！
