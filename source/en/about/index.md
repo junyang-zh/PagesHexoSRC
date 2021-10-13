@@ -13,32 +13,36 @@ My specialties include reliable coding instincts, sufficient leadership and opti
 
 ## Educational History
 
-<div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
-    <div>
-         <b>Xi'an Jiaotong University and Nankai High School</b>,
-        <br>
-        Youth Gifted Program, 2017-2019.
-    </div>
-    <div style="width: 10%;"><img src="/images/NANKAI.png" width="100%"/></div>
-</div>
 
 <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
-    <div>
-         <b>Xi'an Jiaotong University</b>,
-        <br>
-        Honors Computer Science, B.S., 2019-2023.
-    </div>
-    <div style="width: 10%;"><img src="/images/XJTU.png" width="100%"/></div>
+<div>
+<b>Xi'an Jiaotong University and Nankai High School</b>,
+<br>
+Youth Gifted Program, 2017-2019.
+</div>
+<div style="width: 10%;"><img src="/images/NANKAI.png" width="100%"/></div>
 </div>
 
+
 <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
-    <div>
-         <b>University of Pennsylvania</b>,
-        <br>
-        International Guest Student, 2022-2022.
-    </div>
-    <div style="width: 10%;"><img src="/images/UPenn_shield_with_banner.svg" width="100%"/></div>
+<div>
+<b>Xi'an Jiaotong University</b>,
+<br>
+Honors Computer Science, B.S., 2019-2023.
 </div>
+<div style="width: 10%;"><img src="/images/XJTU.png" width="100%"/></div>
+</div>
+
+
+<div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+<div>
+    <b>University of Pennsylvania</b>,
+<br>
+International Guest Student, 2022-2022.
+</div>
+<div style="width: 10%;"><img src="/images/UPenn_shield_with_banner.svg" width="100%"/></div>
+</div>
+
 
 ## Project Experiences
 
