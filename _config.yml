@@ -13,7 +13,7 @@ language:
   - en
 i18n:
   type: [page, post]
-  generator: [archive, about]
+  generator: [archive, about, index]
 timezone: ''
 
 # URL
