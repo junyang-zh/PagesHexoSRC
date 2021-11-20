@@ -171,4 +171,10 @@ International Guest Student, 2022-2022.
 <td>GPA(4.3 Scale)</td>
 <td>3.95</td>
 </tr>
+
+<tr>
+<td>2021</td>
+<td>GRE General</td>
+<td>163+170+4.0</td>
+</tr>
 </table>
