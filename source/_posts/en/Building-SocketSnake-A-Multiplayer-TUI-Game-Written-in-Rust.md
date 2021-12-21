@@ -1,7 +1,9 @@
 ---
 title: 'Building SocketSnake: A Multiplayer TUI Game Written in Rust'
 date: 2021-12-12 20:58:52
-tags: Programming
+tags:
+	- Programming
+	- CS
 ---
 
 ![In Game Capture](/images/SocketSnake/in_game_demo.png)
