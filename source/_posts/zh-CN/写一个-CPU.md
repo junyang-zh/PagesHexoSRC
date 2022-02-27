@@ -10,6 +10,26 @@ tags: CS
 
 [Github Repository: HeliumCPUv2-MIPS32](https://github.com/James-Hen/HeliumCPUv2-MIPS32)
 
+## 文件目录描述
+
+```plain
+.                         # 根目录，包含 Makefile 等文件
+|-- common                # 三种 CPU 实现的通用元件
+|   |-- dbg_mems          # 仿真用存储器实例
+|   |-- ex                # 执行阶段元件，包括 ALU
+|   |-- id                # 解码阶段元件，包括解码器、控制器
+|   |-- if                # 取值阶段元件
+|   |-- mem               # 访存阶段元件
+|   `-- wb                # 写回阶段元件
+|-- includes              # 宏定义，用于指令集架构描述
+|-- multicycle            # 多周期特殊实现
+|-- pipeline              # 流水线特殊实现，包括级间寄存与冒险控制
+|-- pipeline_bp           # 带分支预测的流水线实现
+|-- sim                   # 模拟目录，包括 Testbench 和测试用汇编代码
+|   `-- MIPS_sample_src   # 测试用汇编代码目录
+`-- single_cycle          # 单周期特殊实现
+```
+
 ## 准备环境
 
 老师提供的是一个古早版本的 Modelsim，在 Win7 安装才不会出 bug 的那种。说实话，我不想用。有更多的好用或免费的解决方案放在这里呢：
