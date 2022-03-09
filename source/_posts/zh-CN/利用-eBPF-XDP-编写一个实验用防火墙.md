@@ -1,6 +1,7 @@
 ---
 title: 利用 eBPF XDP 编写一个实验用防火墙
 date: 2022-03-09 14:56:10
+updated: 2022-03-09 20:47:22
 tags: CS
 ---
 
@@ -281,6 +282,12 @@ int xdp_func(struct xdp_md *ctx) {
 #endif
     return XDP_PASS;
 }
+```
+
+输出的东西不会输出到标准输出（命令行），而是一个系统的管道 `/sys/kernel/debug/tracing/trace_pipe`，可以在另一个终端 `cat` 一下来看输出。
+
+```bash
+sudo cat /sys/kernel/debug/tracing/trace_pipe
 ```
 
 ## 我只想丢一次怎么办
