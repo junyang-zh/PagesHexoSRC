@@ -330,6 +330,18 @@ int xdp_func(struct xdp_md *ctx) {
 
 这样就把这个实验做好了，搞了一天半属实有点大动干戈，但是学了不少好东西呢！
 
+## 结果
+
+如图为使用 TShark 得到的包，并使用 WireShark 分析的结果：
+
+![pcapng-result.png](/images/ePBFFirewall/pcapng-result.png)
+
+图中最后倒数第三个包的 ACK number 和理论计算值有差异，原因是 TCP 选择性重传（TCP Out-Of-Order）。虽然长度为 0，但选择了 `SLE=18` 和 `SRE=19` 一个长度为一对区间做选择性 ACK。
+
+这里是不启用防火墙的结果，作为参考：
+
+![pcapng-result.png](/images/ePBFFirewall/pcapng-ref.png)
+
 ## References
 
  - [BPF Reference Guide](https://www.gigamon.com/content/dam/resource-library/english/guide---cookbook/gu-bpf-reference-guide-gigamon-insight.pdf)
