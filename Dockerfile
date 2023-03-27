@@ -3,10 +3,15 @@ MAINTAINER junyangzhang, user@junyang.me
 
 # install hexo
 RUN npm install hexo-cli -g
+WORKDIR /root/src
+COPY . /root/src
+RUN npm install
+
+# install pandoc
+ADD https://github.com/jgm/pandoc/releases/download/3.1.1/pandoc-3.1.1-1-amd64.deb .
+RUN dpkg -i pandoc-3.1.1-1-amd64.deb
 
 # build the site
-COPY . /root
-WORKDIR /root
 RUN hexo generate
 
 # configure nginx
@@ -18,7 +23,7 @@ RUN mkdir -p /var/logs/ && touch /var/logs/error.log && touch /var/logs/nginx.pi
 RUN mkdir -p /usr/share/nginx/html/ && cp -r public /usr/share/nginx/html/
 
 # finishing
-RUN rm -rf /root/*
+RUN rm -rf /root/src
 
 # hexo default port
 EXPOSE 4000
