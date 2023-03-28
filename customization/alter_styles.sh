@@ -13,7 +13,3 @@ NEW_LINE2='$border-radius         = 8px'
 # Use sed to replace the lines in the file
 sed -i -e "s/$OLD_LINE1/$NEW_LINE1/g" "$PISCES_STYL_FILE"
 sed -i -e "s/$OLD_LINE2/$NEW_LINE2/g" "$PISCES_STYL_FILE"
-
-# Place Artalk files
-cp customization/artalk.js "$THEME_NEXT_PATH/scripts/filters/comment"
-cp customization/artalk.njk "$THEME_NEXT_PATH/layout/_third-party/comments"

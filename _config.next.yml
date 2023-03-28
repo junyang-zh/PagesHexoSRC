@@ -664,8 +664,8 @@ comments:
   # Available values: tabs | buttons
   style: tabs
   # Choose a comment system to be displayed by default.
-  # Available values: disqus | disqusjs | changyan | livere | gitalk | utterances | artalk
-  active: artalk
+  # Available values: disqus | disqusjs | changyan | livere | gitalk | utterances
+  active:
   # Setting `true` means remembering the comment system selected by the visitor.
   storage: true
   # Lazyload all comment systems.
@@ -740,11 +740,6 @@ utterances:
 # Isso
 # For more information: https://isso-comments.de
 isso: # <data_isso>
-
-# Artalk
-# For more information: https://artalk.js.org/guide/intro.html
-artalk:
-  enable: true
 
 # ---------------------------------------------------------------
 # Post Widgets & Content Sharing Services
