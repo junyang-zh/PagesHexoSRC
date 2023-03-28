@@ -11,6 +11,9 @@ RUN npm install
 ADD https://github.com/jgm/pandoc/releases/download/3.1.1/pandoc-3.1.1-1-amd64.deb .
 RUN dpkg -i pandoc-3.1.1-1-amd64.deb
 
+# make inplace style changes
+RUN ./customization/alter_styles.sh
+
 # build the site
 RUN hexo generate
 

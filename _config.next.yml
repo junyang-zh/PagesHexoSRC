@@ -28,7 +28,7 @@ custom_file_path:
   #bodyEnd: source/_data/body-end.njk
   #variable: source/_data/variables.styl
   #mixin: source/_data/mixins.styl
-  #style: source/_data/styles.styl
+  style: source/_data/styles.styl
 
 
 # ---------------------------------------------------------------
@@ -117,7 +117,7 @@ menu_settings:
 sidebar:
   # Sidebar Position.
   # position: left
-  position: right
+  position: left
 
   # Manual define the sidebar width. If commented, will be default for:
   # Muse | Mist: 320
@@ -555,7 +555,7 @@ math:
   # Default (false) will load mathjax / katex script on demand.
   # That is it only render those page which has `mathjax: true` in front-matter.
   # If you set it to true, it will load mathjax / katex script EVERY PAGE.
-  every_page: false
+  every_page: true
 
   mathjax:
     enable: true
@@ -664,8 +664,8 @@ comments:
   # Available values: tabs | buttons
   style: tabs
   # Choose a comment system to be displayed by default.
-  # Available values: disqus | disqusjs | changyan | livere | gitalk | utterances
-  active:
+  # Available values: disqus | disqusjs | changyan | livere | gitalk | utterances | artalk
+  active: artalk
   # Setting `true` means remembering the comment system selected by the visitor.
   storage: true
   # Lazyload all comment systems.
@@ -741,6 +741,10 @@ utterances:
 # For more information: https://isso-comments.de
 isso: # <data_isso>
 
+# Artalk
+# For more information: https://artalk.js.org/guide/intro.html
+artalk:
+  enable: true
 
 # ---------------------------------------------------------------
 # Post Widgets & Content Sharing Services
