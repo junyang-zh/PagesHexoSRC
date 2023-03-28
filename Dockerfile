@@ -11,18 +11,19 @@ RUN npm install
 ADD https://github.com/jgm/pandoc/releases/download/3.1.1/pandoc-3.1.1-1-amd64.deb .
 RUN dpkg -i pandoc-3.1.1-1-amd64.deb
 
-# make inplace style changes
-RUN ./customization/alter_styles.sh
-
-# build the site
-RUN hexo generate
-
 # configure nginx
 ADD https://nginx.org/download/nginx-1.20.1.tar.gz .
 RUN tar -xvf nginx-1.20.1.tar.gz && cd nginx-1.20.1 && ./configure && make && make install
 RUN rm -f /usr/local/nginx/conf/nginx.conf
 COPY nginx.conf /usr/local/nginx/conf/nginx.conf
 RUN mkdir -p /var/logs/ && touch /var/logs/error.log && touch /var/logs/nginx.pid
+
+# make inplace style changes
+RUN chmod +x customization/alter_styles.sh && ./customization/alter_styles.sh
+
+# build the site
+RUN hexo generate
+
 RUN mkdir -p /usr/share/nginx/html/ && cp -r public /usr/share/nginx/html/
 
 # finishing
