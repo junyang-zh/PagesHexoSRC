@@ -51,7 +51,7 @@ darkmode: false
 favicon:
   small: /images/site/favicon-16x16.png
   medium: /images/site/favicon-32x32.png
-  apple_touch_icon: /images/site/FilterAvatar.jpg
+  apple_touch_icon: /images/site/FilterAvatar.png
   safari_pinned_tab: /images/site/favicon-32x32.png
   #android_manifest: /manifest.json
 
