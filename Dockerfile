@@ -23,7 +23,7 @@ RUN mkdir -p /var/logs/ && touch /var/logs/error.log && touch /var/logs/nginx.pi
 RUN mkdir -p /usr/share/nginx/html/ && cp -r public /usr/share/nginx/html/
 
 # finishing
-RUN rm -rf /root/src
+RUN dpkg -r pandoc && rm -rf /root/src
 
 # hexo default port
 EXPOSE 4000
