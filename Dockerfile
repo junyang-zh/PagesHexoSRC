@@ -38,9 +38,6 @@ RUN mkdir -p /var/logs/ && touch /var/logs/error.log && touch /var/logs/nginx.pi
 RUN mkdir -p /usr/share/nginx/html/public
 COPY --from=0 /root/src/public /usr/share/nginx/html/public
 
-# finishing
-RUN rm -rf /root/src
-
 # hexo default port
 EXPOSE 4000
 
