@@ -26,7 +26,7 @@ RUN mkdir -p /var/logs/ && touch /var/logs/error.log && touch /var/logs/nginx.pi
 
 # get the built site from the node stage
 RUN mkdir -p /usr/share/nginx/html/
-COPY --from=0 /app/my-app .
+COPY --from=0 /root/src/public /usr/share/nginx/html/
 
 # finishing
 RUN rm -rf /root/src
