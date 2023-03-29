@@ -1,7 +1,7 @@
-MAINTAINER junyangzhang, user@junyang.me
-
 # first stage: build the site using node
 FROM node:latest
+
+MAINTAINER junyangzhang, user@junyang.me
 
 # install hexo and others in package.json
 WORKDIR /root/src
@@ -26,7 +26,7 @@ RUN mkdir -p /var/logs/ && touch /var/logs/error.log && touch /var/logs/nginx.pi
 
 # get the built site from the node stage
 RUN mkdir -p /usr/share/nginx/html/
-COPY --from=builder /app/my-app .
+COPY --from=0 /app/my-app .
 
 # finishing
 RUN rm -rf /root/src
