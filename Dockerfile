@@ -20,8 +20,7 @@ RUN hexo generate
 
 # second stage: configure nginx
 FROM nginx:alpine
-RUN rm -f /usr/local/nginx/conf/nginx.conf
-COPY nginx.conf /usr/local/nginx/conf/nginx.conf
+COPY nginx.conf /etc/nginx/conf.d/hexosite.conf
 RUN mkdir -p /var/logs/ && touch /var/logs/error.log && touch /var/logs/nginx.pid
 
 # get the built site from the node stage
@@ -35,4 +34,4 @@ RUN rm -rf /root/src
 EXPOSE 4000
 
 # run hexo server
-ENTRYPOINT ["/usr/local/nginx/sbin/nginx", "-g", "daemon off;"]
+ENTRYPOINT ["/usr/sbin/nginx", "-g", "daemon off;"]
