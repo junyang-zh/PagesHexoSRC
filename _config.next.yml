@@ -687,7 +687,7 @@ waline:
   # New! Whether enable this plugin
   enable: true
   # Waline server address url, you should set this to your own link
-  serverURL: https://blogbackend.junyang.me
+  serverURL: #WALINE_BACKEND_URL#
   # Waline library CDN url, you can set this to your preferred CDN
   # libUrl: https://unpkg.com/@waline/client@v2/dist/waline.js
   # Waline CSS styles CDN url, you can set this to your preferred CDN

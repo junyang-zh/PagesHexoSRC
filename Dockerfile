@@ -26,6 +26,11 @@ RUN ARCH=$(dpkg --print-architecture) \
 # make inplace style changes
 RUN chmod +x customization/alter_styles.sh && ./customization/alter_styles.sh
 
+# replace the #WALINE_BACKEND_URL# mark in the `_config.next.yml` file to the url
+# of docker argument WALINE_BACKEND_URL
+ARG WALINE_BACKEND_URL
+RUN sed -i "s/#WALINE_BACKEND_URL#/$WALINE_BACKEND_URL/g" _config.next.yml
+
 # build the site
 RUN hexo generate
 
